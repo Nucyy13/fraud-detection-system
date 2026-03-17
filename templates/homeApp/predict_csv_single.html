@@ -1,0 +1,66 @@
+{% load static %}
+{% block title %}
+
+{% endblock %}
+
+{% block css %}
+
+<link href="{% static '/css/demo.css' %}" rel="stylesheet">
+{% endblock %}
+{% block content %}
+<main id="main" >
+
+    <!-- ======= Hero Section ======= -->
+    <section id="homesection" style="padding: 0px 0px;">
+<!--__________________________________ header-box______________________________________________ -->
+<div id="header-container">
+	<h1 id="header2">Single csv record result
+	</h1>
+</div>
+<!-- ___________________________________main-division____________________________________________ -->
+
+<div class=fraud-container style="margin-bottom: 10px;">
+	<div class="fraud-header-container">
+		<h3 class="fraud-header">Credit Card Fraud Detection System - Fruad Analysis</h3>
+	</div>
+	<div class="result-table1">
+		<table>
+			<tr>
+				<th>Algorithm Name</th>
+				<th>Accuracy Score</th>
+				<th>Result</th>
+			</tr>
+			<tr>
+				<td>Logistic Regression</td>
+				<td>{{ precision }}</td>
+				<td>{{ status }}</td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="fraud-header-container">
+		<h3 class="fraud-header">Data values entered by user</h3>
+	</div>
+
+	<div class="result-table1">
+
+    <table>
+    <tr>
+        <th class="c-odd">Label</th>
+        <th>Value</th>
+    </tr>
+    {% for key, value in data.items %}
+        <tr>
+            <td class="c-odd">{{ key }}</td>
+            <td>{{ value }}</td>
+        </tr>
+    {% endfor %}
+</table>
+	</div>
+</div>
+
+    </section><!-- End Hero -->
+  
+    </main>
+  
+{% endblock %}

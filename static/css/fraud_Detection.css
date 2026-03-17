@@ -1,0 +1,70 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
+  /* Light gray background */
+  margin: 0;
+}
+
+#main {
+  text-align: center;
+}
+
+#header-container {
+  background-color: #0096cd;
+  /* Medium blue header background */
+  padding: 20px;
+  color: #fff;
+  /* White text color */
+}
+
+.fraud-container {
+  background-color: #ffffff;
+  /* White container background */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.fraud-header-container {
+  margin-bottom: 20px;
+}
+
+.fraud-header {
+  color: #333;
+  /* Dark header text color */
+  font-size: 24px;
+}
+
+#fraud-buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fraud-buttons {
+  background-color: #0096cd;
+  /* Green button background */
+  color: #fff;
+  /* White button text color */
+  padding: 15px 30px;
+  margin: 10px;
+  text-decoration: none;
+  /* Remove underline */
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  
+  /* Maximum width for responsiveness */
+  text-align: center;
+  /* Center align button text */
+}
+
+
+#fraud-buttons-container a {
+  text-decoration: none;
+}

@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credit Card Fraud Detection Challenges</title>
+  <link rel="stylesheet" href="{% static '/css/about.css'  %}">
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>About</h1>
+  </header>
+
+  <!-- Main Content Section -->
+  <section>
+    <h2>Challenges in Credit Card Fraud Detection</h2>
+
+    <p>The challenge is to recognize fraudulent credit card transactions so that the customers of credit card companies
+      are not charged for items that they did not purchase.</p>
+
+    <ul>
+      <li><strong>Enormous Data:</strong> Enormous data is processed every day, and the model must be fast enough to
+        respond to scams in time.</li>
+      <li><strong>Imbalanced Data:</strong> Most transactions (99.8%) are not fraudulent, making it challenging to
+        detect the fraudulent ones.</li>
+      <li><strong>Data Availability:</strong> Data is mostly private, posing challenges in availability.</li>
+      <li><strong>Misclassified Data:</strong> Not every fraudulent transaction is caught and reported, leading to
+        misclassifications.</li>
+      <li><strong>Adaptive Techniques:</strong> Scammers use adaptive techniques against the model.</li>
+    </ul>
+
+    <h2>Approaches to Overcome These Challenges</h2>
+
+    <ul>
+      <li><strong>Simple and Fast Model:</strong> The model used must be simple and fast to detect anomalies and
+        classify fraudulent transactions quickly.</li>
+      <li><strong>Dealing with Imbalance:</strong> Imbalance can be addressed by using proper methods (discussed in the
+        next paragraph).</li>
+      <li><strong>Privacy Protection:</strong> To protect user privacy, reduce the dimensionality of the data.</li>
+      <li><strong>Trusted Data Source:</strong> Use a more trustworthy source to double-check the data, at least for
+        training the model.</li>
+      <li><strong>Interpretable Model:</strong> Make the model simple and interpretable so that it can be quickly
+        adapted to new threats.</li>
+    </ul>
+  </section>
+  <script src="{%static "/myapp/about.js" %}"></script>
+</body>
+
+</html>

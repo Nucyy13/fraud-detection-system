@@ -1,0 +1,111 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #FF4500;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-family: 'Georgia', serif;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+/* Upload Files Styles */
+#homesection {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#upload-header-container {
+    background: linear-gradient(to right, #FF4500, #d13f30);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+    color: #fff;
+}
+
+.upload {
+    padding: 20px;
+    text-align: center;
+}
+
+.upload-form label {
+    display: block;
+    margin: 15px 0;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.upload-form input,
+.upload-form textarea {
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 1rem;
+    width: calc(100% - 30px);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#file {
+    border: 1px solid #ccc;
+}
+
+.upload-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Add animation keyframes */
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.success-message {
+    color: #2ecc71; /* Green color for success message */
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #2ecc71;
+    border-radius: 5px;
+    background-color: #ecf0f1; /* Light gray background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    /* Apply animation */
+    animation: fadeInOut 3s ease-in-out;
+}
+
+.upload-form #btn {
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 20px 0;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 2px solid #FF4500;
+    background: linear-gradient(to right, #FF4500, #d13f30);
+    display: block;
+}
+
+.upload-form #btn:hover {
+    opacity: 0.8;
+}

@@ -1,0 +1,110 @@
+body {
+    background: linear-gradient(to right, #61C0BF, #2D7595);
+    /* Gradient background with teal and deep blue colors */
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#header-container {
+    background-color: #2D7595;
+    /* Deep blue header background */
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+#header2 {
+    color: #fff;
+    margin: 0;
+}
+
+#example {
+    margin: 2% auto;
+    width: 90%;
+    border: 1px solid #2D7595;
+    /* Deep blue border */
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Semi-transparent white background */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #2D7595;
+    /* Deep blue header background for table */
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #61C0BF;
+    /* Teal background for even rows */
+}
+
+td a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+td a:hover {
+    color: #fff;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-success,
+.btn-danger {
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-success:hover,
+.btn-danger:hover {
+    transform: scale(1.05);
+}
+
+.btn-primary {
+    background-color: #61C0BF;
+    /* Teal button color */
+    border-color: #61C0BF;
+}
+
+.btn-secondary {
+    background-color: #00796B;
+    /* Darker teal button color */
+    border-color: #00796B;
+}
+
+.btn-success {
+    background-color: #4CAF50;
+    /* Green button color */
+    border-color: #4CAF50;
+}
+
+.btn-danger {
+    background-color: #FF5733;
+    /* Orange button color */
+    border-color: #FF5733;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

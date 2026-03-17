@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Add your head content here -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CREDIT CARD FRAUD DETECTION</title>
+  <!-- Add Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Add Animate.css for animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Add your CSS -->
+  <link rel="stylesheet" href="{% static '/css/index.css' %}">
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container">
+      <a class="logo-link animate__animated animate__fadeInLeftBig" href="#">CREDIT CARD FRAUD DETECTION</a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <!-- New navbar item -->
+          <li><a class="nav-link scrollto" href="{% url "dashboard" %}">Dashboard</a></li>
+          <li><a class="nav-link scrollto" href="{% url "cardverifier" %}">Card Verifier</a></li>
+          <li><a class="nav-link scrollto" href="{% url "upload_credit_data" %}">Upload Files</a></li>
+          <li><a class="nav-link scrollto" href="{% url "reports" %}">Files Analysis</a></li>
+          <li><a class="nav-link scrollto" href="{% url "about" %}">About</a></li>
+          {% if user.is_authenticated %}
+          <li><a class="nav-link scrollto" href="{% url 'logout' %}">Logout</a></li>
+          <li><h2>Hi {{ user }}</h2></li>
+          {% else %}
+          <li><a class="getstarted scrollto" href="{% url 'login2' %}">Login</a></li>
+          <li><a class="getstarted scrollto" href="{% url 'registration' %}">Register</a></li>
+          {% endif %}
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Centered Text Section -->
+  <section>
+    <h1 class="animate__animated animate__fadeInDown">Welcome to the Credit Card Fraud Detection</h1>
+    <p class="animate__animated animate__fadeIn">Fraud-Free Future: Explore, Detect, and Protect</p>
+    <p class="animate__animated animate__fadeIn">Enhancing Security for Every Transaction</p>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Credit Card Fraud Detection. All rights reserved.</p>
+    <!-- Add relevant links or additional details here -->
+  </footer>
+
+  <!-- Add your scripts and other body elements here -->
+
+  <!-- Add your JS -->
+  <script src="{% static "/myapp/index.js" %}"></script>
+
+</body>
+
+</html>

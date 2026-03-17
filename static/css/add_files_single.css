@@ -1,0 +1,72 @@
+/* Reset default browser styles */
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+/* General styles */
+#main {
+    padding: 20px;
+}
+
+/* Header styles */
+#header-container {
+    background-color: #007bff; /* Blue color */
+    padding: 20px;
+    text-align: center;
+    color: #fff; /* White color */
+}
+
+#header-container h1 {
+    margin: 0;
+}
+
+/* Container styles */
+.fraud-container {
+    background-color: #f8f9fa; /* Light gray color */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.fraud-header-container {
+    background-color: #007bff; /* Blue color */
+    padding: 10px 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+.fraud-header {
+    color: #fff; /* White color */
+    margin: 0;
+}
+
+/* Form styles */
+.upload-form {
+    text-align: center;
+}
+
+.upload-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.upload-form .file {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Button styles */
+.upload-form .btn {
+    padding: 15px 25px; /* Adjusted padding */
+    background-color: #007bff; /* Blue color */
+    color: #fff; /* White color */
+    border: none;
+    border-radius: 8px; /* Adjusted border radius */
+    cursor: pointer;
+}
+
+.upload-form .btn:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}

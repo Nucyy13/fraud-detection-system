@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Verification</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="{% static '/css/cardverifier.css' %}">
+</head>
+
+<body>
+  <header>
+    <h1 class="animate_animated animate_fadeInDown">Credit Card Verification</h1>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <p class="animate_animated animate_fadeInUp">Please enter your credit card number below to validate.</p>
+        <form id="creditCardForm" class="animate_animated animate_fadeInUp">
+          <input type="text" id="creditCardNumber" placeholder="Enter your 16-digit credit card number">
+          <button type="button" id="validateButton" onclick="validateCreditCard()">Validate</button>
+        </form>
+        <div id="validationResult"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="{% static '/css/cardverifier.js' %}"></script>
+</body>
+
+</html>

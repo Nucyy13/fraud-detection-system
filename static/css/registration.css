@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    /* Light gray background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    /* Dark blue heading color */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+    /* Dark gray label color */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    /* Light gray border */
+    border-radius: 5px;
+    color: #333;
+    /* Dark gray text color */
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff;
+    /* Blue border color on focus */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    /* Blue button background */
+    color: #fff;
+    /* White button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+.form-footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #555;
+    /* Dark gray text color */
+}
+
+.form-footer a {
+    color: #007bff;
+    /* Blue link color */
+    text-decoration: none;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}

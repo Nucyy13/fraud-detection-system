@@ -1,0 +1,58 @@
+{% load static %} {% block title %} 
+ {% endblock %} {% block css %}
+
+<link href="{% static '/css/analysis.css' %}" rel="stylesheet" />
+{% endblock %} {% block content %}
+<main id="main">
+  <!-- ======= Hero Section ======= -->
+  <section id="homesection" style="padding: 0px 0px">
+    <!--__________________________________ header-box______________________________________________ -->
+    <!-- ___________________________________main-division____________________________________________ -->
+
+    <div class="fraud-container" style="margin-bottom: 10px">
+      <div class="fraud-header-container">
+        <h3 class="fraud-header">Analysis of the Dataset</h3>
+      </div>
+      <div class="result-table1">
+        <table>
+          <tr>
+            <th>Algorithm Name</th>
+            <th>Accuracy Score</th>
+            <!-- You might have to compute this if you've a trained model -->
+          </tr>
+          <tr>
+            <td>Data Shape</td>
+            <td>({{ data_shape.0 }},{{ data_shape.1 }})</td>
+          </tr>
+          <tr>
+            <td>Unique Target Values</td>
+            <td>[{{ unique_targets|join:" " }}]</td>
+          </tr>
+          <tr>
+            <td>Percentage of Non-Fraudulent Transactions:</td>
+            <td>{{ percent_no_problem }}%</td>
+          </tr>
+          <tr>
+            <td>Percentage of Fraudulent Transactions:</td>
+            <td>{{ percent_problem }}%</td>
+          </tr>
+          <tr>
+            <td>Null Values</td>
+            <td>{{ has_null }}</td>
+          </tr>
+          <tr>
+            <td>Total Fraudulent Transactions in Dataset</td>
+            <td>{{ fraud_shape.0 }}</td>
+          </tr>
+          <tr>
+            <td>Total Normal Transaction in Dataset</td>
+            <td>{{ normal_shape.0 }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero -->
+</main>
+
+{% endblock %} 

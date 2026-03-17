@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+  font-style: normal;
+  background: linear-gradient(to right, #36d1dc, #5b86e5);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #333;
+  padding: 10px 0;
+  z-index: 1000;
+  transition: background-color 0.5s ease;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+.logo-link,
+#navbar a {
+  color: #fff;
+  text-decoration: none !important;
+  font-size: 1.2em;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+#navbar a:hover,
+.logo-link:hover {
+  color: #36d1dc;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+header h2,
+#navbar li:last-child h2 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+#navbar li:nth-last-child(2) {
+  margin-right: 20px;
+}
+
+#navbar li:last-child {
+  margin-left: 20px;
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+}
+
+section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 2s forwards, scaleIn 2s forwards;
+  margin-top: 50px;
+}
+
+section h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Changed animation for the logo-link */
+.logo-link.animate__fadeInLeftBig {
+  animation: fadeInLeftBig 1.5s;
+}
+
+@keyframes fadeInLeftBig {
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
